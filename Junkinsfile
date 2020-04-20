@@ -6,6 +6,9 @@ node {
    stage('SCM Checkout'){
     // Clone repo
         maven name: 'maven3',
+	}
+	{
+	// Clone repo
 	git branch: 'master', 
 	credentialsId: 'github', 
 	url: 'https://github.com/javahometech/myweb'
